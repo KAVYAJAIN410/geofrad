@@ -1,0 +1,215 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Space+Mono:400,700&display=swap");
+
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #fff;
+            padding: 20px;
+            max-width: 1200px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .top-image {
+            width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        h1 {
+            font-size: 100px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            animation: slideIn 1s ease-out;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .content img {
+            width: 50%; /* Use percentage for responsive size */
+            max-width: 500px; /* Ensure image doesn't get too large */
+            height: auto;
+            animation: fadeInLeft 1s ease-out;
+            border-radius: 30px; /* Border radius for the image */
+        }
+
+        .content p {
+            margin: 0;
+            font-family: "Space Mono", sans-serif;
+            font-size: 18px; /* Adjust font size for better readability */
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 500;
+            max-width: 600px; /* Increase max width for better readability */
+            animation: fadeInRight 1s ease-out;
+        }
+
+        .social-media {
+            margin-top: 30px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .social-media a {
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .social-media a:hover {
+            color: #00aced; /* Change color on hover */
+            transform: scale(1.1); /* Slightly enlarge icon on hover */
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .content img {
+                width: 80%; /* Adjust image size on smaller screens */
+                max-width: 300px; /* Ensure image doesn't get too large */
+            }
+
+            h1 {
+                font-size: 60px; /* Adjust heading size on smaller screens */
+            }
+
+            .top-image {
+                width: 200px; /* Adjust top image size on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 40px; /* Further adjust heading size on very small screens */
+                margin-bottom: 15px;
+            }
+
+            .content img {
+                width: 100%; /* Further adjust image size on very small screens */
+                max-width: 250px; /* Ensure image size is appropriate */
+            }
+
+            .content p {
+                font-size: 16px; /* Adjust paragraph text size on very small screens */
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="./assets/Group 46.png" alt="Top Image" class="top-image">     
+    <section>
+        <h1>
+            We Are<br>
+            Coming Soon
+        </h1>
+        <div class="content">
+            <img src="./assets/image.png" alt="Another Image">
+            <p>Stay Connected with VJ Capacitors! 🌟 Follow us on social media to stay updated on the latest news, product launches, and industry insights from VJ Capacitors.</p>
+        </div>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+</body>
+</html>
